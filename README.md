@@ -1,4 +1,11 @@
-本系统完全由cursor编写。
+# 本系统由cursor编写纯前端项目，运行前请先下载依赖
+````ts
+  npm install
+````
+## node 与 npm 版本
+- node版本：18.20.8
+- npm 版本：10.8.2
+
 # 通义千问API集成项目技术文档(文档AI生成的)
 
 要修改默认的 APIkey 或 请求地址 请到 App.tsx目录下修改
