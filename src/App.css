@@ -1,0 +1,89 @@
+/* 全局样式 */
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #fff;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+}
+
+.app-content {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #f5f5f5;
+}
+
+/* 加载容器 */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 180px);
+  width: 100%;
+}
+
+.loading-content {
+  padding: 50px;
+  text-align: center;
+  }
+
+.loading-content p {
+  margin-top: 16px;
+  color: #666;
+  }
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 16px;
+  }
+  
+  .app-content {
+    padding: 16px;
+  }
+}
+
+/* 聊天界面滚动效果 */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 深色模式滚动条适配 */
+.dark-mode .scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  }
+
+.dark-mode .scrollbar-custom::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.05);
+}
